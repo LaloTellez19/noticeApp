@@ -15,7 +15,7 @@ class createPubliPresenter: createPubliPresenterProtocol, createPubliInteractorO
     
 
     
-    func cretePubli(usuario: String, like: Int16, image: Data, fecha: String, contenido: String, publiImage: Data) {
+    func cretePubli(usuario: String, like: Int16, image: Data, fecha: String, contenido: String!, publiImage: Data!) {
         interactor?.cretePubli(usuario: usuario, like: like, image: image, fecha: fecha, contenido: contenido, publiImage: publiImage)
     }
     

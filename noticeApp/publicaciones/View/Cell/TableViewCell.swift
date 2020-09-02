@@ -29,12 +29,11 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setupCell(user: String, fecha: String, imagen: UIImage?, contenido: String?, publiImage: UIImage?)
+    func setupCell(user: String, fecha: String, imagen: UIImage!, contenido: String!, publiImage: UIImage!)
     {
         userTextField.text = user
         fechaTextField.text = fecha
         userImage.image = imagen
-        
         if let contenido = contenido{
             labelPubli.text = contenido
         }else{
@@ -47,4 +46,5 @@ class TableViewCell: UITableViewCell {
             imagePubli.isHidden = true
         }
     }
+    
 }

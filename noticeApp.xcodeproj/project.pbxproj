@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6B3963BA73A1EF67D2B542A /* Pods_noticeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D154E2E8FC4B2D0BD42FCE42 /* Pods_noticeApp.framework */; };
 		D006F91124F5B41200BBD436 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006F91024F5B41200BBD436 /* AppDelegate.swift */; };
 		D006F91324F5B41200BBD436 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006F91224F5B41200BBD436 /* SceneDelegate.swift */; };
 		D006F91524F5B41200BBD436 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006F91424F5B41200BBD436 /* ViewController.swift */; };
@@ -24,6 +25,8 @@
 		D006F95524F5C37E00BBD436 /* loginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006F94D24F5C37E00BBD436 /* loginWireFrame.swift */; };
 		D006F95724F5C37E00BBD436 /* loginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006F95124F5C37E00BBD436 /* loginProtocols.swift */; };
 		D006F95824F5C37E00BBD436 /* loginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006F95324F5C37E00BBD436 /* loginInteractor.swift */; };
+		D05A9B882500018D007BBD5D /* lottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A9B872500018C007BBD5D /* lottieViewController.swift */; };
+		D05A9B8A25000EF9007BBD5D /* facebookAni.json in Resources */ = {isa = PBXBuildFile; fileRef = D05A9B8925000EF8007BBD5D /* facebookAni.json */; };
 		D05BA40F24F6E4E6002817D2 /* createAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05BA40E24F6E4E6002817D2 /* createAccount.storyboard */; };
 		D05BA41B24F72378002817D2 /* publicacionesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05BA41224F72378002817D2 /* publicacionesPresenter.swift */; };
 		D05BA41C24F72378002817D2 /* publicacionesWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05BA41424F72378002817D2 /* publicacionesWireFrame.swift */; };
@@ -42,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5377AD902A456B4D945A3E13 /* Pods-noticeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noticeApp.release.xcconfig"; path = "Target Support Files/Pods-noticeApp/Pods-noticeApp.release.xcconfig"; sourceTree = "<group>"; };
+		B90B04FFA625A16EF434DDB6 /* Pods-noticeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noticeApp.debug.xcconfig"; path = "Target Support Files/Pods-noticeApp/Pods-noticeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D006F90D24F5B41200BBD436 /* noticeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noticeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D006F91024F5B41200BBD436 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D006F91224F5B41200BBD436 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +66,8 @@
 		D006F94D24F5C37E00BBD436 /* loginWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginWireFrame.swift; sourceTree = "<group>"; };
 		D006F95124F5C37E00BBD436 /* loginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginProtocols.swift; sourceTree = "<group>"; };
 		D006F95324F5C37E00BBD436 /* loginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginInteractor.swift; sourceTree = "<group>"; };
+		D05A9B872500018C007BBD5D /* lottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottieViewController.swift; sourceTree = "<group>"; };
+		D05A9B8925000EF8007BBD5D /* facebookAni.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = facebookAni.json; path = ../../../Downloads/facebookAni.json; sourceTree = "<group>"; };
 		D05BA40E24F6E4E6002817D2 /* createAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = createAccount.storyboard; sourceTree = "<group>"; };
 		D05BA41224F72378002817D2 /* publicacionesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = publicacionesPresenter.swift; sourceTree = "<group>"; };
 		D05BA41424F72378002817D2 /* publicacionesWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = publicacionesWireFrame.swift; sourceTree = "<group>"; };
@@ -76,6 +83,7 @@
 		D05BA42F24F81214002817D2 /* createPubliProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createPubliProtocols.swift; sourceTree = "<group>"; };
 		D05BA43124F81214002817D2 /* createPubliInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createPubliInteractor.swift; sourceTree = "<group>"; };
 		D05BA43724F8123E002817D2 /* nuevaPubli.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = nuevaPubli.storyboard; sourceTree = "<group>"; };
+		D154E2E8FC4B2D0BD42FCE42 /* Pods_noticeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_noticeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,17 +91,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B3963BA73A1EF67D2B542A /* Pods_noticeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B520AE4C59303C5922C3460A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B90B04FFA625A16EF434DDB6 /* Pods-noticeApp.debug.xcconfig */,
+				5377AD902A456B4D945A3E13 /* Pods-noticeApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D006F90424F5B41200BBD436 = {
 			isa = PBXGroup;
 			children = (
 				D006F90F24F5B41200BBD436 /* noticeApp */,
 				D006F90E24F5B41200BBD436 /* Products */,
+				B520AE4C59303C5922C3460A /* Pods */,
+				F10D878DAB16B5099DAB6A75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +129,7 @@
 		D006F90F24F5B41200BBD436 /* noticeApp */ = {
 			isa = PBXGroup;
 			children = (
+				D05A9B8925000EF8007BBD5D /* facebookAni.json */,
 				D05BA42724F81214002817D2 /* createPubli */,
 				D05BA41024F72378002817D2 /* publicaciones */,
 				D006F94924F5C37E00BBD436 /* login */,
@@ -209,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				D006F91424F5B41200BBD436 /* ViewController.swift */,
+				D05A9B872500018C007BBD5D /* lottieViewController.swift */,
 				D006F91624F5B41200BBD436 /* Main.storyboard */,
 			);
 			path = View;
@@ -346,6 +369,14 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		F10D878DAB16B5099DAB6A75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D154E2E8FC4B2D0BD42FCE42 /* Pods_noticeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -353,9 +384,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D006F92124F5B41500BBD436 /* Build configuration list for PBXNativeTarget "noticeApp" */;
 			buildPhases = (
+				704C7EB22AD8BC203DF65102 /* [CP] Check Pods Manifest.lock */,
 				D006F90924F5B41200BBD436 /* Sources */,
 				D006F90A24F5B41200BBD436 /* Frameworks */,
 				D006F90B24F5B41200BBD436 /* Resources */,
+				774C873226E6A6338B8AA572 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -390,6 +423,9 @@
 				Base,
 			);
 			mainGroup = D006F90424F5B41200BBD436;
+			packageReferences = (
+				D05A9B7F24FFED59007BBD5D /* RemoteSwiftPackageReference */,
+			);
 			productRefGroup = D006F90E24F5B41200BBD436 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -410,11 +446,54 @@
 				D05BA43824F8123E002817D2 /* nuevaPubli.storyboard in Resources */,
 				D006F91D24F5B41500BBD436 /* LaunchScreen.storyboard in Resources */,
 				D006F91A24F5B41500BBD436 /* Assets.xcassets in Resources */,
+				D05A9B8A25000EF9007BBD5D /* facebookAni.json in Resources */,
 				D006F91824F5B41200BBD436 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		704C7EB22AD8BC203DF65102 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-noticeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		774C873226E6A6338B8AA572 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-noticeApp/Pods-noticeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-noticeApp/Pods-noticeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-noticeApp/Pods-noticeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D006F90924F5B41200BBD436 /* Sources */ = {
@@ -428,6 +507,7 @@
 				D006F94224F5B55100BBD436 /* createAccountProtocols.swift in Sources */,
 				D006F93F24F5B55100BBD436 /* createAccountPresenter.swift in Sources */,
 				D05BA42524F72F62002817D2 /* TableViewCell.swift in Sources */,
+				D05A9B882500018D007BBD5D /* lottieViewController.swift in Sources */,
 				D006F94124F5B55100BBD436 /* createAccountView.swift in Sources */,
 				D006F94024F5B55100BBD436 /* createAccountWireFrame.swift in Sources */,
 				D006F94524F5B61800BBD436 /* coreDataManager.swift in Sources */,
@@ -587,6 +667,7 @@
 		};
 		D006F92224F5B41500BBD436 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B90B04FFA625A16EF434DDB6 /* Pods-noticeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -605,6 +686,7 @@
 		};
 		D006F92324F5B41500BBD436 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5377AD902A456B4D945A3E13 /* Pods-noticeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -643,6 +725,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D05A9B7F24FFED59007BBD5D /* RemoteSwiftPackageReference */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCVersionGroup section */
 		D006F94624F5B64100BBD436 /* Model.xcdatamodeld */ = {

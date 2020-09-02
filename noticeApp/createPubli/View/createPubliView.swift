@@ -33,8 +33,8 @@ class createPubliViewController: UIViewController, createPubliViewProtocol, UIIm
             presenter?.cretePubli(usuario: user, like: 0, image: perfil, fecha: dateiniAdd, contenido: contenido, publiImage: imagen)
             navigationController?.popViewController(animated: true)
         }else{
-            /*presenter?.cretePubli(usuario: "Lalo", like: 0, image: (previewImage.image?.pngData())!, fecha: dateiniAdd, contenido: textPubli.text, publiImage: (previewImage.image?.pngData())!)
-            navigationController?.popViewController(animated: true)*/
+            presenter?.cretePubli(usuario: user, like: 0, image: (presenter?.getImagen(usuario: user))!, fecha: dateiniAdd, contenido: textPubli.text!, publiImage: previewImage.image?.pngData()!)
+            navigationController?.popViewController(animated: true)
         }
     }
     

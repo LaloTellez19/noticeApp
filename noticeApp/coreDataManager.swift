@@ -28,7 +28,7 @@ class coreDataManager{
         }
     }
     
-    func createPubli(usuario: String, like: Int16,image: Data!,fecha: String,contenido:String!,publiImage: Data!, completion: @escaping() -> Void)
+    func createPubli(usuario: String, like: Int16,image: Data,fecha: String,contenido:String!,publiImage: Data!, completion: @escaping() -> Void)
     {
         let context = container.viewContext
         let publi = Publicaciones(context: context)

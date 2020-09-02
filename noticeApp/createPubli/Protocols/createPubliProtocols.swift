@@ -29,7 +29,7 @@ protocol createPubliPresenterProtocol: class {
     /**
     * Add here your methods for communication VIEW -> PRESENTER
     */
-    func cretePubli(usuario: String, like: Int16,image: Data,fecha: String,contenido:String,publiImage: Data)
+    func cretePubli(usuario: String, like: Int16,image: Data,fecha: String,contenido:String!,publiImage: Data!)
     func getImagen(usuario: String)->Data
 
 }
@@ -46,7 +46,7 @@ protocol createPubliInteractorInputProtocol: class
     /**
     * Add here your methods for communication PRESENTER -> INTERACTOR
     */
-    func cretePubli(usuario: String, like: Int16,image: Data,fecha: String,contenido:String,publiImage: Data)
+    func cretePubli(usuario: String, like: Int16,image: Data,fecha: String,contenido:String!,publiImage: Data!)
     func getImagen(usuario: String)->Data
     
 }

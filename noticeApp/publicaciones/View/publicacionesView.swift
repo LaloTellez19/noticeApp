@@ -52,12 +52,18 @@ class publicacionesViewController: UIViewController, publicacionesViewProtocol, 
         if let newCell = cell as? TableViewCell {
             DispatchQueue.main.async {
                 let publi = self.publica[indexPath.row]
-                if let usuario = publi.usuario, let fecha = publi.fecha, let imagen = publi.imagen, let contenido = publi.contenido, let conteIma = publi.publiImage{
-                    let uiImage = UIImage(data: imagen)
-                    let uiImage2 = UIImage(data: conteIma)
-                    newCell.setupCell(user: usuario, fecha: fecha, imagen: uiImage, contenido: contenido, publiImage: uiImage2)
+                let usuario = publi.usuario
+                let fecha = publi.fecha
+                let imagen = publi.imagen
+                let uiImage = UIImage(data: imagen!)
+                let contenido = publi.contenido
+                var uiImage2: UIImage?
+                if let conteIma = publi.publiImage
+                {
+                    uiImage2 = UIImage(data: conteIma)
                 }
-
+                newCell.setupCell(user: usuario!, fecha: fecha!, imagen: uiImage, contenido: contenido, publiImage: uiImage2)
+                
             }
         }
         return cell

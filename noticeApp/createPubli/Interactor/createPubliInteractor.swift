@@ -13,7 +13,7 @@ class createPubliInteractor: createPubliInteractorInputProtocol {
         manager.getImage(usuario: usuario)
     }
     
-    func cretePubli(usuario: String, like: Int16, image: Data, fecha: String, contenido: String, publiImage: Data) {
+    func cretePubli(usuario: String, like: Int16, image: Data, fecha: String, contenido: String!, publiImage: Data!) {
         manager.createPubli(usuario: usuario, like: like, image: image, fecha: fecha, contenido: contenido, publiImage: publiImage){}
     }
     
