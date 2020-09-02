@@ -24,6 +24,6 @@ class loginPresenter: loginPresenterProtocol, loginInteractorOutputProtocol {
     weak var view: loginViewProtocol?
     var interactor: loginInteractorInputProtocol?
     var wireFrame: loginWireFrameProtocol?
-
+    
     init() {}
 }

@@ -17,10 +17,10 @@ class createAccountInteractor: createAccountInteractorInputProtocol {
         manager.usuarioExiste(usuario: usuario, completion: completion)
     }
     
-
-
     
-
+    
+    
+    
     weak var presenter: createAccountInteractorOutputProtocol?
     private var manager = coreDataManager.shared
     init() {}

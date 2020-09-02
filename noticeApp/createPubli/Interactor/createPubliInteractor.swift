@@ -17,7 +17,7 @@ class createPubliInteractor: createPubliInteractorInputProtocol {
         manager.createPubli(usuario: usuario, like: like, image: image, fecha: fecha, contenido: contenido, publiImage: publiImage){}
     }
     
-
+    
     weak var presenter: createPubliInteractorOutputProtocol?
     private var manager = coreDataManager()
     init() {}

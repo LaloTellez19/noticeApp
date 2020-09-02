@@ -10,14 +10,13 @@ import Foundation
 import UIKit
 
 class createPubliViewController: UIViewController, createPubliViewProtocol, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
-    @IBOutlet weak var textPubli: UITextView!
     var user: String!
     var presenter: createPubliPresenterProtocol?
+    @IBOutlet weak var textPubli: UITextView!
     @IBOutlet weak var previewImage: UIImageView!
     @IBAction func btnImagen(_ sender: Any) {
         chooseImage()
     }
-    
     @IBAction func btnCancel(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
@@ -37,8 +36,6 @@ class createPubliViewController: UIViewController, createPubliViewProtocol, UIIm
             navigationController?.popViewController(animated: true)
         }
     }
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +55,7 @@ class createPubliViewController: UIViewController, createPubliViewProtocol, UIIm
             if UIImagePickerController.isSourceTypeAvailable(.camera){
                 imagePickerController.sourceType = .camera
                 self.present(imagePickerController, animated: true, completion: nil)
-    
+                
             }
         }))
         

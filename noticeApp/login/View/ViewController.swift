@@ -10,12 +10,25 @@ import UIKit
 import Foundation
 
 class ViewController: UIViewController, loginViewProtocol{
-    var presenter: loginPresenterProtocol?
     private let manager = coreDataManager()
+    var presenter: loginPresenterProtocol?
     let publicacionesB = publicacionesViewController()
-    
+    @IBOutlet weak var btnCreateView: UIButton!
+    @IBOutlet weak var btnLoginView: UIButton!
     @IBOutlet weak var usuarioTextField: UITextField!
+        {
+        didSet{
+            usuarioTextField.tintColor = UIColor.lightGray
+            usuarioTextField.setIcon(UIImage(imageLiteralResourceName: "iconUser"))
+        }
+    }
     @IBOutlet weak var passwordTextField: UITextField!
+        {
+        didSet{
+            passwordTextField.tintColor = UIColor.lightGray
+            passwordTextField.setIcon(UIImage(imageLiteralResourceName: "pass"))
+        }
+    }
     @IBAction func btnLogin(_ sender: Any) {
         if let usertxt = usuarioTextField.text, usertxt.isEmpty,
             let passtxt = passwordTextField.text, passtxt.isEmpty{
@@ -37,12 +50,18 @@ class ViewController: UIViewController, loginViewProtocol{
     @IBAction func btnCreate(_ sender: Any) {
         presenter?.cambioCreateAccount()
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         inicializarViper()
         initizalaHideKeyboad()
-
+        btnLoginView.layer.cornerRadius = 15
+        btnLoginView.layer.borderWidth = 1
+        
+        btnCreateView.layer.cornerRadius = 15
+        btnCreateView.layer.borderWidth = 1
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -95,3 +114,15 @@ class ViewController: UIViewController, loginViewProtocol{
     }
 }
 
+extension UITextField{
+    func setIco(_ image: UIImage){
+        let iconView = UIImageView(frame:
+            CGRect(x: 10, y: 5, width: 20, height: 20))
+        iconView.image = image
+        let iconContainerView: UIView = UIView(frame:
+            CGRect(x: 20, y: 0, width: 30, height: 30))
+        iconContainerView.addSubview(iconView)
+        leftView = iconContainerView
+        leftViewMode = .always
+    }
+}

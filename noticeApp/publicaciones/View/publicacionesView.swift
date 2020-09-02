@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class publicacionesViewController: UIViewController, publicacionesViewProtocol, UITableViewDataSource, UITableViewDelegate{
-
     var user: String!
     var presenter: publicacionesPresenterProtocol?
     private var publica: [Publicaciones]  = []
@@ -26,7 +25,7 @@ class publicacionesViewController: UIViewController, publicacionesViewProtocol, 
         publicaTable.dataSource = self
         if let imagen = presenter?.getImage(usuario: user)
         {
-           perfilImage.image = UIImage(data: imagen)
+            perfilImage.image = UIImage(data: imagen)
         }
     }
     
@@ -45,7 +44,7 @@ class publicacionesViewController: UIViewController, publicacionesViewProtocol, 
         return publica.count
     }
     
-      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell",
                                                  for: indexPath)

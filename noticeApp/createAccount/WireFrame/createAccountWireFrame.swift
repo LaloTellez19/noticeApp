@@ -18,16 +18,15 @@ class createAccountWireFrame: createAccountWireFrameProtocol {
         loginWireFrame.presentloginModule(fromView: controlador)
     }
     
-
     static func presentcreateAccountModule(fromView vc:AnyObject) {
-
+        
         // Generating module components
         let storyboard = UIStoryboard(name: "createAccount", bundle: Bundle.main)
         let view: createAccountViewProtocol = storyboard.instantiateViewController(withIdentifier: "crear_usuario") as! createAccountViewProtocol
         let presenter: createAccountPresenterProtocol & createAccountInteractorOutputProtocol = createAccountPresenter()
         let interactor: createAccountInteractorInputProtocol = createAccountInteractor()
         let wireFrame: createAccountWireFrameProtocol = createAccountWireFrame()
-
+        
         // Connecting
         view.presenter = presenter
         presenter.view = view

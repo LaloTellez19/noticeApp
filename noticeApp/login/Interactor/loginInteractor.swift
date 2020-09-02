@@ -12,8 +12,6 @@ class loginInteractor: loginInteractorInputProtocol {
     func login(usuario: String, contraseña: String) -> Bool {
         manager.login(usuario: usuario, contraseña: contraseña)
     }
-    
-
     weak var presenter: loginInteractorOutputProtocol?
     private let manager = coreDataManager()
     init() {}

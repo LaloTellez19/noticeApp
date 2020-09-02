@@ -17,10 +17,6 @@ class publicacionesPresenter: publicacionesPresenterProtocol, publicacionesInter
         interactor?.getPubli()
     }
     
-    
-    
-    
-    
     func getImage(usuario: String) -> Data {
         (interactor?.getImage(usuario: usuario))!
     }
@@ -32,6 +28,6 @@ class publicacionesPresenter: publicacionesPresenterProtocol, publicacionesInter
     weak var view: publicacionesViewProtocol?
     var interactor: publicacionesInteractorInputProtocol?
     var wireFrame: publicacionesWireFrameProtocol?
-
+    
     init() {}
 }

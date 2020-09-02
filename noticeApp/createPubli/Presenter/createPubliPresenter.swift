@@ -9,19 +9,17 @@
 import Foundation
 
 class createPubliPresenter: createPubliPresenterProtocol, createPubliInteractorOutputProtocol {
-    func getImagen(usuario: String) -> Data {
-        (interactor?.getImagen(usuario: usuario))!
-    }
-    
-
-    
-    func cretePubli(usuario: String, like: Int16, image: Data, fecha: String, contenido: String!, publiImage: Data!) {
-        interactor?.cretePubli(usuario: usuario, like: like, image: image, fecha: fecha, contenido: contenido, publiImage: publiImage)
-    }
     
     weak var view: createPubliViewProtocol?
     var interactor: createPubliInteractorInputProtocol?
     var wireFrame: createPubliWireFrameProtocol?
-
+    
     init() {}
+    func getImagen(usuario: String) -> Data {
+        (interactor?.getImagen(usuario: usuario))!
+    }
+    
+    func cretePubli(usuario: String, like: Int16, image: Data, fecha: String, contenido: String!, publiImage: Data!) {
+        interactor?.cretePubli(usuario: usuario, like: like, image: image, fecha: fecha, contenido: contenido, publiImage: publiImage)
+    }
 }

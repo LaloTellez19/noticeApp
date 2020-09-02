@@ -13,7 +13,6 @@ class publicacionesWireFrame: publicacionesWireFrameProtocol {
     func newPubli(controlador: AnyObject, usuario: String) {
         createPubliWireFrame.presentcreatePubliModule(fromView: controlador, usuario: usuario)
     }
-    
 
     static func presentpublicacionesModule(fromView vc:AnyObject, usuario: String) {
         

@@ -10,17 +10,13 @@ import Foundation
 import UIKit
 
 class createPubliWireFrame: createPubliWireFrameProtocol {
-
-    
     func publicando(controlador: AnyObject) {
     }
     
     func cancelarNew(controlador: AnyObject) {
     }
     
-
     static func presentcreatePubliModule(fromView vc:AnyObject, usuario: String) {
-
         // Generating module components
         let storyboard = UIStoryboard(name: "nuevaPubli", bundle: Bundle.main)
         let view: createPubliViewProtocol = storyboard.instantiateViewController(withIdentifier: "new") as! createPubliViewProtocol

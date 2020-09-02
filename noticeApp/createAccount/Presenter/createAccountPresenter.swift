@@ -14,12 +14,9 @@ class createAccountPresenter: createAccountPresenterProtocol, createAccountInter
         interactor?.validarUsuario(usuario: usuario, completion: completion)
     }
     
-  
-
-    
     weak var view: createAccountViewProtocol?
     var interactor: createAccountInteractorInputProtocol?
     var wireFrame: createAccountWireFrameProtocol?
-
+    
     init() {}
 }

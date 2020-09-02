@@ -12,10 +12,23 @@ import UIKit
 class createAccountViewController: UIViewController, createAccountViewProtocol, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var presenter: createAccountPresenterProtocol?
     let manager = coreDataManager()
-    @IBOutlet weak var passTextField: UITextField!
-    @IBOutlet weak var userTextField: UITextField!
+    @IBOutlet weak var btnCreateView: UIButton!
     @IBOutlet weak var imageView: UIImageView!
-    
+    @IBOutlet weak var btnAddView: UIButton!
+    @IBOutlet weak var passTextField: UITextField!
+        {
+        didSet{
+            passTextField.tintColor = UIColor.lightGray
+            passTextField.setIcon(UIImage(imageLiteralResourceName: "pass"))
+        }
+    }
+    @IBOutlet weak var userTextField: UITextField!{
+        didSet{
+            userTextField.tintColor = UIColor.lightGray
+            userTextField.setIcon(UIImage(imageLiteralResourceName: "iconUser"))
+        }
+    }
+
     @IBAction func btnCancelar(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
@@ -33,7 +46,7 @@ class createAccountViewController: UIViewController, createAccountViewProtocol, 
                 {
                     self.manager.createUsers(usuario: usuario, contraseña: contra, image: imagen!){}
                     self.navigationController?.popViewController(animated: true)
-                     self.usuarioCreado()
+                    self.usuarioCreado()
                     
                 }else{
                     self.usuarioExiste()
@@ -41,23 +54,23 @@ class createAccountViewController: UIViewController, createAccountViewProtocol, 
             })
         }
     }
-    
-    
+
     @IBAction func addimage(_ sender: Any) {
         DispatchQueue.main.async {
             self.chooseImage()
         }
-       
+        
     }
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         initizalaHideKeyboad()
+        btnCreateView.layer.cornerRadius = 15
+        btnCreateView.layer.borderWidth = 1
+        btnAddView.layer.cornerRadius = 15
+        btnAddView.layer.borderWidth = 1
     }
-    
-    
-    
+
     func chooseImage()
     {
         let imagePickerController = UIImagePickerController()
@@ -121,5 +134,19 @@ class createAccountViewController: UIViewController, createAccountViewProtocol, 
     }
     @objc func dismissMyKeyboard(){
         view.endEditing(true)
+    }
+    
+}
+
+extension UITextField{
+    func setIcon(_ image: UIImage){
+        let iconView = UIImageView(frame:
+            CGRect(x: 10, y: 5, width: 20, height: 20))
+        iconView.image = image
+        let iconContainerView: UIView = UIView(frame:
+            CGRect(x: 20, y: 0, width: 30, height: 30))
+        iconContainerView.addSubview(iconView)
+        leftView = iconContainerView
+        leftViewMode = .always
     }
 }

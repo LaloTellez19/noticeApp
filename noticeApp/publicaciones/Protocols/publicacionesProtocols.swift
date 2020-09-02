@@ -11,16 +11,16 @@ import Foundation
 protocol publicacionesViewProtocol: class {
     var presenter: publicacionesPresenterProtocol? { get set }
     /**
-    * Add here your methods for communication PRESENTER -> VIEW
-    */
+     * Add here your methods for communication PRESENTER -> VIEW
+     */
     func returnData(publicaciones: Array<Publicaciones>)
 }
 
 protocol publicacionesWireFrameProtocol: class {
     static func presentpublicacionesModule(fromView vc: AnyObject, usuario: String)
     /**
-    * Add here your methods for communication PRESENTER -> WIREFRAME
-    */
+     * Add here your methods for communication PRESENTER -> WIREFRAME
+     */
     func newPubli(controlador: AnyObject, usuario: String)
 }
 
@@ -29,8 +29,8 @@ protocol publicacionesPresenterProtocol: class {
     var interactor: publicacionesInteractorInputProtocol? { get set }
     var wireFrame: publicacionesWireFrameProtocol? { get set }
     /**
-    * Add here your methods for communication VIEW -> PRESENTER
-    */
+     * Add here your methods for communication VIEW -> PRESENTER
+     */
     func newPubli(usuario: String)
     func getImage(usuario: String)->Data
     func getPubli()
@@ -38,8 +38,8 @@ protocol publicacionesPresenterProtocol: class {
 
 protocol publicacionesInteractorOutputProtocol: class {
     /**
-    * Add here your methods for communication INTERACTOR -> PRESENTER
-    */
+     * Add here your methods for communication INTERACTOR -> PRESENTER
+     */
     func returnData(publicaciones: Array<Publicaciones>)
 }
 
@@ -47,8 +47,8 @@ protocol publicacionesInteractorInputProtocol: class
 {
     var presenter: publicacionesInteractorOutputProtocol? { get set }
     /**
-    * Add here your methods for communication PRESENTER -> INTERACTOR
-    */
+     * Add here your methods for communication PRESENTER -> INTERACTOR
+     */
     func getImage(usuario: String)->Data
     func getPubli()
 }

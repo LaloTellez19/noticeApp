@@ -64,7 +64,7 @@ class coreDataManager{
             print("Error guardando Usuario \(usuario)")
         }
     }
-
+    
     func login(usuario: String, contraseña: String) -> Bool
     {
         var flag = false
@@ -128,7 +128,7 @@ class coreDataManager{
         }
         return []
     }
-
+    
     func getImage(usuario: String) -> Data
     {
         var imagen: Data?
@@ -148,8 +148,6 @@ class coreDataManager{
         }
         return imagen!
     }
-    
-    
 }
 
 

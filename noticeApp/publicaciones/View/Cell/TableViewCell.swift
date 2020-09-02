@@ -10,6 +10,10 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
+    @IBOutlet weak var btnLikeView: UIButton!
+    @IBAction func btnLike(_ sender: Any) {
+        
+    }
     @IBOutlet weak var fechaTextField: UILabel!
     @IBOutlet weak var imagePubli: UIImageView!
     @IBOutlet weak var userTextField: UILabel!

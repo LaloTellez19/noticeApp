@@ -18,7 +18,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gA8-Aw-ulQ">
                                 <rect key="frame" x="106" y="360" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Agregar Foto">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -26,7 +26,7 @@
                                     <action selector="addimage:" destination="ojK-8K-ZsO" eventType="touchUpInside" id="uWw-xy-ToV"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SwG-eG-7Hc">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" disabledBackground="flag.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SwG-eG-7Hc">
                                 <rect key="frame" x="57" y="431" width="300" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -41,7 +41,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9Z-Wq-qoK">
                                 <rect key="frame" x="106" y="583" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Crear cuenta">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -70,6 +70,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="07D-nM-JjO"/>
                     <connections>
+                        <outlet property="btnAddView" destination="gA8-Aw-ulQ" id="ufH-AP-K1P"/>
+                        <outlet property="btnCreateView" destination="b9Z-Wq-qoK" id="GCf-cK-3lj"/>
                         <outlet property="imageView" destination="MLo-6I-2HN" id="rPg-Wm-EWa"/>
                         <outlet property="passTextField" destination="QxO-yb-Lxd" id="eDv-us-JXT"/>
                         <outlet property="userTextField" destination="SwG-eG-7Hc" id="JtX-dq-dfl"/>
@@ -82,5 +84,6 @@
     </scenes>
     <resources>
         <image name="User" width="200" height="283.5"/>
+        <image name="flag.slash" catalog="system" width="121" height="128"/>
     </resources>
 </document>
